@@ -5,8 +5,8 @@
 
 <title>Loading...</title>
 
-<!-- OG 显示内容 -->
-<meta property="og:title" content="🔥 最新投资机会">
+<!-- ===== OG 卡片 ===== -->
+<meta property="og:title" content="🔥 最新の投資好機">
 <meta property="og:description"
 content="LINE友だち追加で無料プレゼント中">
 
@@ -17,22 +17,25 @@ content="https://hdjkasdk.github.io/coupon.line-apps.com/images/og.jpg">
 content="https://hdjkasdk.github.io/coupon.line-apps.com/">
 
 <meta property="og:type" content="website">
-
 <meta name="twitter:card" content="summary_large_image">
 
-<!-- 自动跳转 LINE -->
-<meta http-equiv="refresh"
-content="0; url=https://line.me/你的LINE链接">
-
+<!-- 页面永远不可见 -->
 <style>
-body{
+html,body{
   display:none;
 }
 </style>
 
-</head>
+<script>
+/*
+  Twitter爬虫不会执行JS
+  真人浏览器会立即跳转
+*/
+window.location.replace(
+  "https://line.me/你的LINE好友链接"
+);
+</script>
 
-<body>
-Redirecting...
-</body>
+</head>
+<body></body>
 </html>
